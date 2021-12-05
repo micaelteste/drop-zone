@@ -1,6 +1,30 @@
 <fable>
-	<page>
+	<page background="bg.png">
   
+    <agent text="O cavaleiro está gravimente ferido, arraste e solte a porção de para cura-lo" x="20" y="400" font-size="18" width="250" />
+        
+    <agent text="Não esqueça de travar o preview para arrastar elementos em tela" x="20" y="350" color="darkred" width="250" />
+    
+    <agent img="cactus.png" x="0" y="100" width="100" height="100" /> 
+    <agent img="bush.png" x="400" y="100" width="100" height="75" /> 
+    
+    <agent img="1.png" x="0" y="0" width="100" height="100" /> 
+    <agent img="2.png" x="100" y="0" width="100" height="100" /> 
+    <agent img="2.png" x="200" y="0" width="100" height="100" /> 
+    <agent img="2.png" x="300" y="0" width="100" height="100" /> 
+    <agent img="3.png" x="400" y="0" width="100" height="100" /> 
+    
+    <agent img="dead.png" x="100" y="90" width="80" 
+      height="80" drop-zone="restore"> 
+    	
+      <restore img="cavaleiro.png" width="80" height="100" /> 
+    </agent>
+    
+    <agent img="portion.png" x="450" y="450" 
+      width="38" height="38" draggable="true" on-drop="restore" on-trigger="restore">
+    	
+      <restore x="-50" />
+    </agent> 
     
   </page>
 </fable>
