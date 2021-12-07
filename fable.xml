@@ -21,9 +21,9 @@
     </agent>
     
     <agent img="portion.png" x="450" y="450" 
-      width="38" height="38" draggable="true" on-drop="restore" on-trigger="restore">
+      width="38" height="38" draggable="true" on-drop="restore" on-zone="lived" on-trigger="lived">
     	
-      <restore x="-50" />
+      <lived x="-50" />
     </agent> 
     
   </page>
